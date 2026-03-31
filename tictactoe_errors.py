@@ -1,6 +1,10 @@
 import tkinter as tk
 from tkinter import messagebox
 
+
+        # Розробка гри "Хрестики-нулики"
+
+
 class TicTacToe:
     def __init__(self, root):
         self.root = root

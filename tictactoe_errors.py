@@ -3,6 +3,7 @@ from tkinter import messagebox
 
 
     # Розробка гри "Хрестики-нулики"
+    # З помилками
 
 class TicTacToe:
     def __init__(self, root):

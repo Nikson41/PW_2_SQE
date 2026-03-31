@@ -3,7 +3,7 @@ from tkinter import messagebox
 
 
         # Розробка гри "Хрестики-нулики"
-        # З помилками
+        # З помилками2 
 
 
 class TicTacToe:

@@ -72,12 +72,12 @@ class TicTacToe:
     def check_winner(self):
         # Перевірка рядків
         for row in self.buttons:
-
-            # if row[0]["text"] == row[1]["text"] == row[2]["text"] != "":
-
             # Функціональна помилка №3: Визнає переможцем навіть при порожніх клітинках, що є некоректним
+                # помилка ВИРІШЕНА!!!
 
-            if row[0]["text"] == row[1]["text"] == row[2]["text"]:
+            if row[0]["text"] == row[1]["text"] == row[2]["text"] != "":
+
+            # if row[0]["text"] == row[1]["text"] == row[2]["text"]:
                 return True
 
         # Перевірка колонок

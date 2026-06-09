@@ -60,8 +60,8 @@ class TicTacToe:
             messagebox.showinfo("Гра завершена", f"Переміг: {self.current_player}")
 
             # Функціональна помилка №2: Гра не зупиняється після перемоги
-
-            # self.disable_buttons()
+                # проблема ВИРІШЕНА!!! Було додано рядок нижче
+            self.disable_buttons()
             return
 
         if self.check_draw():

@@ -35,12 +35,17 @@ class TicTacToe:
                 #                    command=lambda r=row, c=col: self.make_move(r, c))
 
                 # UI/UX Помилка №3: Різний розмір кнопок (поганий дизайн)
+                    # проблема ВИРІШЕНА!!!
 
-
-                button = tk.Button(self.root, text="", font=("Arial", 24), width=3 + row, height=1 + col,
+                button = tk.Button(self.root, text="", font=("Arial", 24), width=5, height=2,
                                    command=lambda r=row, c=col: self.make_move(r, c))
                 button.grid(row=row+1, column=col)
                 self.buttons[row][col] = button
+
+                # button = tk.Button(self.root, text="", font=("Arial", 24), width=3 + row, height=1 + col,
+                #                    command=lambda r=row, c=col: self.make_move(r, c))
+                # button.grid(row=row+1, column=col)
+                # self.buttons[row][col] = button
 
     def make_move(self, row, col):
         # Функціональна помилка №1: Дозволяє перезаписувати вже зроблений хід, що порушує правила гри

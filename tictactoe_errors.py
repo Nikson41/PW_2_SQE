@@ -22,11 +22,11 @@ class TicTacToe:
 
 
         # UI/UX Помилка №2: Кнопка "Нова гра" розташована в незручному місці
+            # проблема ВИРІШЕНА!!! 
 
+        self.reset_button.grid(row=4, column=0, columnspan=3, pady=10)
 
-        # self.reset_button.grid(row=4, column=0, columnspan=3, pady=10)
-
-        self.reset_button.grid(row=2, column=1)
+        # self.reset_button.grid(row=2, column=1)
 
     def create_board(self):
         for row in range(3):

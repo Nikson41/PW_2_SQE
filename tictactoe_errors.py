@@ -64,10 +64,12 @@ class TicTacToe:
             return
 
         self.current_player = "O" if self.current_player == "X" else "X"
+        self.label.config(text=f"Хід: {self.current_player}")
 
         # UI/UX Помилка №1: Не оновлюється інформація про поточного гравця після ходу
+            # помилка ВИРІШЕНА!!! Було додано рядок нижче
 
-        # self.label.config(text=f"Хід: {self.current_player}")
+        
 
     def check_winner(self):
         # Перевірка рядків

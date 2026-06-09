@@ -49,10 +49,10 @@ class TicTacToe:
 
     def make_move(self, row, col):
         # Функціональна помилка №1: Дозволяє перезаписувати вже зроблений хід, що порушує правила гри
+            # проблема ВИРІШЕНА!!! Було додано рядок нижче
 
-
-        # if self.buttons[row][col]["text"] != "":
-        #     return
+        if self.buttons[row][col]["text"] != "":
+            return
 
         self.buttons[row][col]["text"] = self.current_player
 
